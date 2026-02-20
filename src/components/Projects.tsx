@@ -7,7 +7,7 @@ const projects = [
         subtitle: 'AI Digital Wallet & Ledger Engine',
         description: 'Engineered a ledger-based, multi-currency digital wallet with atomic transactions and idempotent APIs for financial accuracy.',
         tech: ['FastAPI', 'React', 'Redis', 'AWS Bedrock'],
-        image: '/acufinai.png',
+        image: './acufinai.png',
         icon: <Zap size={20} />,
         link: '#'
     },
@@ -16,7 +16,7 @@ const projects = [
         subtitle: 'Cloud-Native AI Collaboration',
         description: 'Architected a cloud-native collaboration platform supporting real-time chat, task management, and workflow automation.',
         tech: ['FastAPI', 'React.js', 'WebSockets', 'AWS Cognito'],
-        image: '/co.png',
+        image: './co.png',
         icon: <MessageSquare size={20} />,
         link: '#'
     },
@@ -25,7 +25,7 @@ const projects = [
         subtitle: 'High-Concurrency Booking',
         description: 'High-concurrency doctor–patient scheduling system using Redis locks and secure PDF prescription handling.',
         tech: ['Django REST', 'React.js', 'MySQL', 'Docker'],
-        image: '/healt.png',
+        image: './healt.png',
         icon: <Shield size={20} />,
         link: '#'
     },
@@ -34,7 +34,7 @@ const projects = [
         subtitle: 'E-Commerce Branding Platform',
         description: 'Full-scale clothing brand portal with integrated checkout, inventory management, and admin dashboard.',
         tech: ['Django REST', 'React.js', 'MySQL', 'AWS'],
-        image: '/clo.png',
+        image: './clo.png',
         icon: <Cpu size={20} />,
         link: '#'
     }

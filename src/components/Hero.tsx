@@ -99,7 +99,7 @@ const Hero = () => {
                     >
                         <div className="relative z-10 bg-slate-900 p-3 rounded-[3.5rem] shadow-2xl border border-slate-800 group overflow-hidden">
                             <img
-                                src="/photo.png"
+                                src="./photo.png"
                                 alt="Ashok Kumar Reddy Kota"
                                 className="w-full h-auto rounded-[2.8rem] object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                             />
