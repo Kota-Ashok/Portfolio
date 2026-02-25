@@ -18,10 +18,10 @@ const About = () => {
 
                         <div className="space-y-6 text-slate-400 text-lg leading-relaxed mb-10">
                             <p>
-                                I am a <span className="text-white font-semibold">Full-Stack Software Engineer</span> with over 2 years of experience designing and deploying scalable, cloud-native, and AI-powered SaaS platforms.
+                                I am a <span className="text-white font-semibold">Full-Stack Software Engineer</span> specializing in scalable SaaS and AI-integrated backend systems.
                             </p>
                             <p>
-                                My expertise centers on <span className="text-white font-semibold">distributed architectures</span>, ledger-based financial engines, and secure multi-tenant systems. I thrive on solving complex technical challenges using Python (FastAPI, Django), React, and AI integration via AWS Bedrock.
+                                My expertise centers on <span className="text-white font-semibold">distributed architectures</span>, ledger-based financial engines, and real-time event-driven applications. I have a proven ability to integrate LLM-driven workflows using Hugging Face (Qwen3) and AWS Bedrock.
                             </p>
                         </div>
 
@@ -60,9 +60,11 @@ const About = () => {
                             <div className="space-y-4">
                                 {[
                                     "AWS Academy Cloud Foundations",
-                                    "Docker Essentials (IBM)",
                                     "Python Programming (Cisco)",
-                                    "Full-Stack Web Development"
+                                    "Docker Essentials (IBM)",
+                                    "Full-Stack Web Development with Django ",
+                                    "React Complete Guide ",
+                                    "Cloud DevOps (Udemy)"
                                 ].map((cert, i) => (
                                     <div key={i} className="flex items-center gap-3 text-sm text-slate-400">
                                         <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />

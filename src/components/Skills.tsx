@@ -7,37 +7,37 @@ const skillCategories = [
     {
         title: 'Backend & APIs',
         icon: <Database className="text-blue-500" />,
-        skills: ['Python', 'FastAPI', 'Django', 'Flask', 'Async Programming', 'Celery', 'Redis']
+        skills: ['Python', 'FastAPI', 'Django', 'Flask', 'Async Programming', 'Background Tasks']
     },
     {
         title: 'Auth & Security',
         icon: <Lock className="text-blue-500" />,
-        skills: ['OAuth 2.0', 'Keycloak', 'AWS Cognito', 'JWT', 'RBAC', 'TLS 1.3']
+        skills: ['OAuth 2.0', 'Keycloak', 'AWS Cognito', 'JWT', 'RBAC', 'TLS 1.3', 'AES-256']
     },
     {
         title: 'System Design',
         icon: <Layers className="text-blue-500" />,
-        skills: ['Microservices', 'Multi-Tenant SaaS', 'Event-Driven', 'API Versioning']
+        skills: ['Microservices', 'Multi-Tenant SaaS', 'Distributed Systems', 'API Versioning']
     },
     {
         title: 'Cloud & AI',
         icon: <Cloud className="text-blue-500" />,
-        skills: ['AWS EC2/S3/RDS', 'CloudFront', 'AWS Bedrock', 'AI/ML Integration']
+        skills: ['AWS (EC2/S3/RDS)', 'Hugging Face', 'Qwen3', 'AWS Bedrock', 'RAG', 'Prompt Engineering']
     },
     {
         title: 'Frontend',
         icon: <Globe className="text-blue-500" />,
-        skills: ['React.js', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'RTK Query']
+        skills: ['React.js', 'TypeScript', 'Redux Toolkit', 'RTK Query', 'Real-Time UI']
     },
     {
         title: 'Databases',
         icon: <Search className="text-blue-500" />,
-        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Query Optimization']
+        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Indexing', 'Query Optimization']
     },
     {
         title: 'Testing & DevOps',
         icon: <ShieldCheck className="text-blue-500" />,
-        skills: ['Pytest', 'Docker', 'Git', 'GitHub Actions', 'Postman', 'Agile']
+        skills: ['Pytest', 'Docker', 'Git', 'CI/CD', 'Postman', 'Logging & Monitoring']
     },
     {
         title: 'Specialized',

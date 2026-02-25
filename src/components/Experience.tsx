@@ -6,14 +6,14 @@ const experiences = [
         company: 'CosmoOps Private Limited',
         position: 'Software Engineer',
         period: 'Dec 2023 – Present',
-        location: 'Pondicherry | Remote',
+        location: 'Pondicherry | IN',
         type: 'Full-Time',
-        description: 'Developing scalable backend services and multi-tenant SaaS architectures for production systems.',
+        description: 'Designed and deployed scalable FastAPI and Django REST services powering FinTech, AI-driven, and multi-tenant SaaS platforms.',
         achievements: [
-            'Enforce secure authentication and authorization using OAuth 2.0, OpenID Connect, Keycloak, JWT, and RBAC.',
-            'Design multi-tenant SaaS architectures ensuring strict tenant-level data isolation.',
-            'Optimize PostgreSQL, MySQL, and Redis for high-concurrency workloads.',
-            'Incorporate AI-driven automation using AWS Bedrock for intelligent system workflows.'
+            'Engineered ledger-based financial systems with atomic, idempotent transactions and event-driven payment processing using Stripe and Razorpay webhooks.',
+            'Built real-time systems using WebSockets, Redis pub/sub, and asynchronous background tasks to support high-concurrency workloads.',
+            'Integrated LLM-powered automation using Hugging Face (Qwen3-235B-A22B) and AWS Bedrock for intelligent task prioritization, summarization, and analytics.',
+            'Optimized PostgreSQL and Redis through indexing and caching strategies, reducing API latency by up to 30% while enforcing OAuth2/OIDC-based RBAC security.'
         ]
     }
 ];

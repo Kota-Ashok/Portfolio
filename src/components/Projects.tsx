@@ -5,8 +5,8 @@ const projects = [
     {
         title: 'AcuFinAi',
         subtitle: 'AI Digital Wallet & Ledger Engine',
-        description: 'Engineered a ledger-based, multi-currency digital wallet with atomic transactions and idempotent APIs for financial accuracy.',
-        tech: ['FastAPI', 'React', 'Redis', 'AWS Bedrock'],
+        description: 'Built a double-entry, multi-currency ledger engine with atomic, idempotent transactions and AI-powered financial intelligence pipelines.',
+        tech: ['FastAPI', 'React', 'Redux Toolkit', 'Celery', 'Redis', 'PostgreSQL', 'AWS Bedrock', 'Keycloak'],
         image: './acufinai.png',
         icon: <Zap size={20} />,
         link: '#'
@@ -14,8 +14,8 @@ const projects = [
     {
         title: 'Collabryta',
         subtitle: 'Cloud-Native AI Collaboration',
-        description: 'Architected a cloud-native collaboration platform supporting real-time chat, task management, and workflow automation.',
-        tech: ['FastAPI', 'React.js', 'WebSockets', 'AWS Cognito'],
+        description: 'Architected a multi-tenant platform with real-time messaging and Qwen3-driven task prioritization and meeting summarization.',
+        tech: ['FastAPI', 'React.js', 'WebSockets', 'Redis', 'Hugging Face', 'Qwen3', 'AWS Cognito'],
         image: './co.png',
         icon: <MessageSquare size={20} />,
         link: '#'
@@ -23,8 +23,8 @@ const projects = [
     {
         title: 'Schedora',
         subtitle: 'High-Concurrency Booking',
-        description: 'High-concurrency doctor–patient scheduling system using Redis locks and secure PDF prescription handling.',
-        tech: ['Django REST', 'React.js', 'MySQL', 'Docker'],
+        description: 'High-concurrency doctor–patient scheduling system using Redis distributed locking and secure digitally signed PDF prescriptions.',
+        tech: ['Django REST', 'React.js', 'MySQL', 'Redis', 'Docker', 'AWS'],
         image: './healt.png',
         icon: <Shield size={20} />,
         link: '#'
@@ -32,7 +32,7 @@ const projects = [
     {
         title: 'OutfitCart',
         subtitle: 'E-Commerce Branding Platform',
-        description: 'Full-scale clothing brand portal with integrated checkout, inventory management, and admin dashboard.',
+        description: 'Full-scale clothing brand portal with integrated checkout, inventory management, and 40% optimized database query performance.',
         tech: ['Django REST', 'React.js', 'MySQL', 'AWS'],
         image: './clo.png',
         icon: <Cpu size={20} />,

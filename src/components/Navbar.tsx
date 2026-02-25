@@ -22,7 +22,7 @@ const Navbar = () => {
         { name: 'Contact', href: '#contact' },
     ];
 
-    const RESUME_LINK = "https://drive.google.com/file/d/1o88h2D4U6GI3NhABcGqeOQ2-VfIsp-e5/view?usp=sharing";
+    const RESUME_LINK = "https://drive.google.com/file/d/19elpQSKA2sGt7Mbkd69uuEfPNuAvcO6W/view?usp=sharing";
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900 border-b border-slate-800 py-3' : 'bg-transparent py-5'}`}>
