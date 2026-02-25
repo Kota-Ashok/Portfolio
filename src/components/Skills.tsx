@@ -12,7 +12,7 @@ const skillCategories = [
     {
         title: 'Auth & Security',
         icon: <Lock className="text-blue-500" />,
-        skills: ['OAuth 2.0', 'Keycloak', 'AWS Cognito', 'JWT', 'RBAC', 'TLS 1.3', 'AES-256']
+        skills: ['OAuth 2.0', 'OIDC', 'Keycloak', 'AWS Cognito', 'JWT', 'RBAC', 'Token Rotation', 'AES-256']
     },
     {
         title: 'System Design',
@@ -32,7 +32,7 @@ const skillCategories = [
     {
         title: 'Databases',
         icon: <Search className="text-blue-500" />,
-        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Indexing', 'Query Optimization']
+        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Audit Logs', 'Query Optimization']
     },
     {
         title: 'Testing & DevOps',
