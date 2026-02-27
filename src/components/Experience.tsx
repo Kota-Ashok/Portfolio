@@ -12,7 +12,7 @@ const experiences = [
         achievements: [
             'Engineered ledger-based financial systems with atomic, idempotent transactions and event-driven payment processing using Stripe and Razorpay webhooks.',
             'Built real-time systems using WebSockets, Redis pub/sub, and asynchronous background tasks to support high-concurrency workloads.',
-            'Integrated LLM-powered automation using Hugging Face (Qwen3-235B-A22B) and AWS Bedrock for intelligent task prioritization, summarization, and analytics.',
+            'Integrated LLM-powered automation using Hugging Face (Llama 3 70B) and AWS Bedrock for intelligent task prioritization, summarization, and analytics.',
             'Optimized PostgreSQL and Redis through indexing and caching strategies, reducing API latency by up to 30% while enforcing OAuth2/OIDC-based RBAC security.'
         ]
     }
