@@ -22,7 +22,7 @@ const skillCategories = [
     {
         title: 'Cloud & AI',
         icon: <Cloud className="text-blue-500" />,
-        skills: ['AWS (EC2/S3/RDS)', 'Hugging Face', 'Qwen3', 'AWS Bedrock', 'RAG', 'Prompt Engineering']
+        skills: ['AWS (EC2/S3/RDS)', 'Hugging Face', 'Llama 3 70B', 'AWS Bedrock', 'RAG', 'Prompt Engineering']
     },
     {
         title: 'Frontend',
