@@ -15,7 +15,7 @@ const projects = [
         title: 'Collabryta',
         subtitle: 'Cloud-Native AI Collaboration',
         description: 'Architected a multi-tenant platform with real-time messaging and Qwen3-driven task prioritization and meeting summarization.',
-        tech: ['FastAPI', 'React.js', 'WebSockets', 'Redis', 'Hugging Face', 'Qwen3', 'AWS Cognito'],
+        tech: ['FastAPI', 'React.js', 'WebSockets', 'Redis', 'Hugging Face', 'Llama 3 70B', 'AWS Cognito'],
         image: './co.png',
         icon: <MessageSquare size={20} />,
         link: '#'
