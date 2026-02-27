@@ -52,15 +52,15 @@ const Hero = () => {
                         >
                             <div className="flex items-center gap-2 text-slate-400">
                                 <Code2 size={18} className="text-blue-500" />
-                                <span className="text-sm font-bold uppercase tracking-wider">FastAPI / Django</span>
+                                <span className="text-sm font-bold uppercase tracking-wider">Python / FastAPI / Django</span>
                             </div>
                             <div className="flex items-center gap-2 text-slate-400">
                                 <Database size={18} className="text-blue-500" />
-                                <span className="text-sm font-bold uppercase tracking-wider">Cloud Native</span>
+                                <span className="text-sm font-bold uppercase tracking-wider">Distributed Systems</span>
                             </div>
                             <div className="flex items-center gap-2 text-slate-400">
                                 <Cpu size={18} className="text-blue-500" />
-                                <span className="text-sm font-bold uppercase tracking-wider">AI Engines</span>
+                                <span className="text-sm font-bold uppercase tracking-wider">LLM & AI Workflows</span>
                             </div>
                         </motion.div>
 
@@ -70,7 +70,7 @@ const Hero = () => {
                             transition={{ delay: 0.5 }}
                             className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl leading-relaxed font-medium"
                         >
-                            Architecting <span className="text-white border-b border-blue-500/50">high-performance SaaS</span> platforms with integrated AI intelligence and financial-grade security.
+                            Specializing in <span className="text-white border-b border-blue-500/50">scalable SaaS</span> and AI-integrated backend systems, leveraging Llama 3 and AWS Bedrock to build intelligent, production-grade microservices.
                         </motion.p>
 
                         <motion.div

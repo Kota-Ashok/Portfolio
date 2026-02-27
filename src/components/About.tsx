@@ -18,10 +18,10 @@ const About = () => {
 
                         <div className="space-y-6 text-slate-400 text-lg leading-relaxed mb-10">
                             <p>
-                                I am a <span className="text-white font-semibold">Full-Stack Software Engineer</span> specializing in scalable SaaS and AI-integrated backend systems.
+                                I am a <span className="text-white font-semibold">Full-Stack Software Engineer</span> specializing in scalable SaaS and AI-integrated backend systems. My expertise lies in Python, FastAPI, Django, and asynchronous architectures.
                             </p>
                             <p>
-                                My expertise centers on <span className="text-white font-semibold">distributed architectures</span>, ledger-based financial engines, and real-time event-driven applications. I have a proven ability to integrate LLM-driven workflows using Hugging Face (Qwen3) and AWS Bedrock.
+                                I have extensive experience building <span className="text-white font-semibold">ledger-based financial engines</span>, real-time event-driven applications, and secure multi-tenant platforms. I specialize in integrating LLM-driven workflows using Hugging Face, Llama 3 70B, and AWS Bedrock to deliver intelligent automation.
                             </p>
                         </div>
 
@@ -30,7 +30,7 @@ const About = () => {
                                 <GraduationCap size={24} className="text-blue-500" />
                                 <div>
                                     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Education</p>
-                                    <p className="font-bold text-slate-200">B.Tech</p>
+                                    <p className="font-bold text-slate-200">B.Tech in EEE</p>
                                     <p className="text-xs text-slate-500">RGMCET | 2019 - 2023</p>
                                 </div>
                             </div>
@@ -59,12 +59,12 @@ const About = () => {
 
                             <div className="space-y-4">
                                 {[
-                                    "AWS Academy Cloud Foundations",
-                                    "Python Programming (Cisco)",
-                                    "Docker Essentials (IBM)",
-                                    "Full-Stack Web Development with Django ",
-                                    "React Complete Guide ",
-                                    "Cloud DevOps (Udemy)"
+                                    "AWS Academy Cloud Foundations – Amazon Web Services",
+                                    "Python Programming – Cisco Networking Academy",
+                                    "Docker Essentials – IBM Skills Network",
+                                    "Full-Stack Web Development with Django – Udemy",
+                                    "React – The Complete Guide – Udemy",
+                                    "Introduction to Cloud DevOps – Udemy"
                                 ].map((cert, i) => (
                                     <div key={i} className="flex items-center gap-3 text-sm text-slate-400">
                                         <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
