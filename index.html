@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Kumar Reddy Kota | Full-Stack Software Engineer Dashboard</title>
+    <meta name="description"
+        content="SaaS-style portfolio of Ashok Kumar Reddy Kota, a Backend-Focused Full-Stack Software Engineer specializing in Python, FastAPI, Django, system design, and AI automation.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons for clean visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Background Design Overlay -->
+    <div class="bg-gradient-glow"></div>
+    <div class="bg-grid"></div>
+
+    <div class="dashboard-layout">
+        <!-- Telemetry Sticky Top Header (Redesigned Single-Row) -->
+        <header class="telemetry-header" id="header">
+            <div class="header-container container">
+                <!-- Left: Profile Info Summary -->
+                <div class="header-left">
+                    <div class="header-profile-summary">
+                        <div class="header-avatar"><i data-lucide="cpu"></i></div>
+                        <div class="header-profile-text">
+                            <span class="profile-name-text">Ashok Reddy Kota</span>
+                            <span class="profile-status-text">
+                                <span class="pulse-dot"></span> TELEMETRY ONLINE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center: Navigation Menu -->
+                <nav class="nav-menu" id="nav-row">
+                    <a href="#home" class="nav-link active" id="link-home">Home</a>
+                    <a href="#about" class="nav-link" id="link-about">About</a>
+                    <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                    <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+                    <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                    <a href="#certifications" class="nav-link" id="link-certifications">Credentials</a>
+                    <a href="#education" class="nav-link" id="link-education">Education</a>
+                    <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+                </nav>
+
+                <!-- Right: Actions Group -->
+                <div class="header-actions-group">
+                    <a href="AshokReddy_Fullstack_Resume.pdf" download class="btn-download-top" id="btn-download-resume">
+                        <i data-lucide="download" style="width: 13px; height: 13px;"></i> Resume
+                    </a>
+                    <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Main Dashboard Window -->
+        <div class="dashboard-main">
+
+            <!-- Dashboard Content Container -->
+            <main class="dashboard-content">
+                <!-- Hero Section Widget -->
+                <section id="home" class="dashboard-widget">
+                    <div class="hero-widget-grid">
+                        <div class="hero-content">
+                            <span class="hero-tagline">SYSTEMS ENGINEER &amp; FULL-STACK DEVELOPER</span>
+                            <h1 class="hero-title">Ashok Kumar Reddy Kota</h1>
+                            <h2 class="hero-subtitle">Building Scalable Backend Systems &amp; AI-Driven SaaS</h2>
+                            <p class="hero-desc">
+                                Backend-Focused Full-Stack Software Engineer with 2.5+ years of experience designing
+                                robust architectures, high-performance payment engines, and multi-tenant platforms.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#projects" class="btn-primary" id="hero-btn-projects">Explore Projects <i
+                                        data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                                <a href="#contact" class="btn-secondary" id="hero-btn-contact">Contact Me</a>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Simulator Widget -->
+                        <div class="terminal-container" id="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot-red"></span>
+                                    <span class="dot-yellow"></span>
+                                    <span class="dot-green"></span>
+                                </div>
+                                <span class="terminal-title-text">ashok-reddy ~ guest-session</span>
+                                <i data-lucide="terminal"
+                                    style="width: 14px; height: 14px; color: var(--text-muted);"></i>
+                            </div>
+                            <div class="terminal-body" id="terminal-body">
+                                <div class="terminal-welcome">
+                                    Welcome to Ashok's Interactive Resume CLI.<br>
+                                    Type <span style="color: var(--color-primary); font-weight: bold;">help</span> to
+                                    see available commands.
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="terminal-prompt">guest@ashok-reddy:~$</span>
+                                    <span class="terminal-command">info</span>
+                                </div>
+                                <div class="terminal-output">Name: Ashok Kumar Reddy Kota<br>Role: Full-Stack Software Engineer (Backend-Focused)<br>Exp: 2.5+ Years<br>Core: Python (FastAPI/Django), System Design, AI Microservices<br>Location: Hyderabad, India</div>
+
+                                <div class="terminal-input-line" id="terminal-input-row">
+                                    <span class="terminal-prompt">guest@ashok-reddy:~$</span>
+                                    <input type="text" class="terminal-input" id="terminal-textbox" autofocus
+                                        autocomplete="off" spellcheck="false" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stats Summary Widget Row -->
+                <section class="stats-section-row">
+                    <div class="stat-widget-card">
+                        <div class="stat-widget-icon"><i data-lucide="calendar"></i></div>
+                        <div class="stat-widget-info">
+                            <span class="stat-widget-number">2.5+</span>
+                            <span class="stat-widget-label">Years Exp</span>
+                        </div>
+                    </div>
+                    <div class="stat-widget-card">
+                        <div class="stat-widget-icon"><i data-lucide="layers"></i></div>
+                        <div class="stat-widget-info">
+                            <span class="stat-widget-number">9+</span>
+                            <span class="stat-widget-label">Projects</span>
+                        </div>
+                    </div>
+                    <div class="stat-widget-card">
+                        <div class="stat-widget-icon"><i data-lucide="code-2"></i></div>
+                        <div class="stat-widget-info">
+                            <span class="stat-widget-number">15+</span>
+                            <span class="stat-widget-label">Technologies</span>
+                        </div>
+                    </div>
+                    <div class="stat-widget-card">
+                        <div class="stat-widget-icon"><i data-lucide="shield"></i></div>
+                        <div class="stat-widget-info">
+                            <span class="stat-widget-number">10+</span>
+                            <span class="stat-widget-label">Certifications</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section Widget -->
+                <section id="about" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="user" class="widget-icon"></i>
+                            <h2 class="widget-title">Profile Diagnostics</h2>
+                        </div>
+                        <span class="widget-tag">SYS_INFO_01</span>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 0.8rem; color: var(--color-primary);">
+                                Architecting robust, secure, and scalable backend platforms.</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.8rem;">
+                                I specialize in building multi-tenant SaaS structures, enterprise applications, and
+                                AI-enabled APIs. With a strong engineering background, I optimize systems from database
+                                query layers up to background worker architectures.
+                            </p>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                Over my career, I've developed and maintained massive educational management software
+                                serving government administrators, engineered ledger systems with strict transactional
+                                guarantees, and built modular event-driven microservices.
+                            </p>
+                        </div>
+                        <div class="about-highlights-grid">
+                            <div class="about-highlight-card">
+                                <div class="highlight-icon"><i data-lucide="cpu"></i></div>
+                                <h4 class="highlight-title">System Design</h4>
+                                <p class="highlight-desc">Event-Driven architectures, microservices integration, and
+                                    high-concurrency Redis channels.</p>
+                            </div>
+                            <div class="about-highlight-card">
+                                <div class="highlight-icon"><i data-lucide="wallet"></i></div>
+                                <h4 class="highlight-title">FinTech Ledger</h4>
+                                <p class="highlight-desc">Double-entry wallets with atomic transaction guarantees and
+                                    webhook-driven reconciliation.</p>
+                            </div>
+                            <div class="about-highlight-card">
+                                <div class="highlight-icon"><i data-lucide="sparkles"></i></div>
+                                <h4 class="highlight-title">AI &amp; Automation</h4>
+                                <p class="highlight-desc">Embedding Hugging Face &amp; AWS Bedrock models for automated
+                                    task planning.</p>
+                            </div>
+                            <div class="about-highlight-card">
+                                <div class="highlight-icon"><i data-lucide="database"></i></div>
+                                <h4 class="highlight-title">Performance Tuning</h4>
+                                <p class="highlight-desc">Optimizing queries, indexing, and Redis caching layers to
+                                    reduce latency by up to 30%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Expertise Widget -->
+                <section id="skills" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="terminal" class="widget-icon"></i>
+                            <h2 class="widget-title">Technical Expertise Matrix</h2>
+                        </div>
+                        <span class="widget-tag">SYS_STACK_02</span>
+                    </div>
+
+                    <div class="skills-tabs">
+                        <button class="skill-tab-btn active" data-filter="all">ALL STACKS</button>
+                        <button class="skill-tab-btn" data-filter="backend">BACKEND &amp; SECURITY</button>
+                        <button class="skill-tab-btn" data-filter="database">DATABASES &amp; CLOUD</button>
+                        <button class="skill-tab-btn" data-filter="ai-devops">AI &amp; DEVOPS</button>
+                        <button class="skill-tab-btn" data-filter="frontend">FRONTEND</button>
+                    </div>
+
+                    <div class="skills-grid" id="skills-display-grid">
+                        <!-- Backend Card -->
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="server"></i></div>
+                                <h3 class="skill-card-title">Backend &amp; APIs</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Django REST Framework</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">RESTful APIs</span>
+                                <span class="skill-tag">Async Programming</span>
+                                <span class="skill-tag">API Design</span>
+                                <span class="skill-tag">API Versioning</span>
+                            </div>
+                        </div>
+
+                        <!-- Security Card -->
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="shield-check"></i></div>
+                                <h3 class="skill-card-title">Auth &amp; Security</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">OAuth 2.0</span>
+                                <span class="skill-tag">OpenID Connect</span>
+                                <span class="skill-tag">Keycloak</span>
+                                <span class="skill-tag">AWS Cognito</span>
+                                <span class="skill-tag">JWT</span>
+                                <span class="skill-tag">RBAC</span>
+                                <span class="skill-tag">Password Hashing</span>
+                                <span class="skill-tag">Token Rotation</span>
+                                <span class="skill-tag">TLS 1.3</span>
+                                <span class="skill-tag">AES-256</span>
+                            </div>
+                        </div>
+
+                        <!-- Databases Card -->
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="database"></i></div>
+                                <h3 class="skill-card-title">Databases &amp; Caching</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Redis</span>
+                                <span class="skill-tag">Schema Design</span>
+                                <span class="skill-tag">Query Optimization</span>
+                                <span class="skill-tag">Database Management</span>
+                                <span class="skill-tag">Indexing</span>
+                                <span class="skill-tag">Caching</span>
+                                <span class="skill-tag">Audit Logs</span>
+                            </div>
+                        </div>
+
+                        <!-- Cloud Card -->
+                        <div class="skill-card" data-category="database">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="cloud"></i></div>
+                                <h3 class="skill-card-title">Cloud Infrastructure</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">AWS EC2</span>
+                                <span class="skill-tag">AWS S3</span>
+                                <span class="skill-tag">AWS RDS</span>
+                                <span class="skill-tag">AWS CloudFront</span>
+                                <span class="skill-tag">AWS Cognito</span>
+                                <span class="skill-tag">IAM Policies</span>
+                            </div>
+                        </div>
+
+                        <!-- AI & LLM Card -->
+                        <div class="skill-card" data-category="ai-devops">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="bot"></i></div>
+                                <h3 class="skill-card-title">AI Microservices</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">AWS Bedrock</span>
+                                <span class="skill-tag">Hugging Face</span>
+                                <span class="skill-tag">Llama 3 70B</span>
+                                <span class="skill-tag">Qwen3</span>
+                                <span class="skill-tag">RAG Frameworks</span>
+                                <span class="skill-tag">Prompt Engineering</span>
+                            </div>
+                        </div>
+
+                        <!-- DevOps Card -->
+                        <div class="skill-card" data-category="ai-devops">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="git-branch"></i></div>
+                                <h3 class="skill-card-title">DevOps &amp; Testing</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Git &amp; GitHub</span>
+                                <span class="skill-tag">CI/CD Concepts</span>
+                                <span class="skill-tag">Pytest</span>
+                                <span class="skill-tag">Unit Testing</span>
+                                <span class="skill-tag">Integration Testing</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">Logging &amp; Monitoring</span>
+                            </div>
+                        </div>
+
+                        <!-- Frontend Card -->
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="layout"></i></div>
+                                <h3 class="skill-card-title">Frontend Stacks</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Redux Toolkit</span>
+                                <span class="skill-tag">RTK Query</span>
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">Real-Time UI Development</span>
+                            </div>
+                        </div>
+
+                        <!-- System Design Card -->
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-card-header">
+                                <div class="skill-card-icon"><i data-lucide="git-merge"></i></div>
+                                <h3 class="skill-card-title">System Design</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span class="skill-tag">Microservices</span>
+                                <span class="skill-tag">Event-Driven Architecture</span>
+                                <span class="skill-tag">Scalable Architectures</span>
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">Multi-Tenant SaaS</span>
+                                <span class="skill-tag">Design Patterns</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section Widget -->
+                <section id="experience" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="briefcase" class="widget-icon"></i>
+                            <h2 class="widget-title">Professional Milestones</h2>
+                        </div>
+                        <span class="widget-tag">SYS_WORK_LOG_03</span>
+                    </div>
+
+                    <div class="timeline">
+                        <!-- AppZone Tech -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="job-role">Software Engineer</h3>
+                                        <span class="job-company">AppZone Technology</span>
+                                    </div>
+                                    <div class="job-meta">
+                                        <div class="job-date">Mar 2026 – Present</div>
+                                        <div class="job-location">Hyderabad, India</div>
+                                    </div>
+                                </div>
+                                <p class="timeline-client"><strong>Client:</strong> Andhra Pradesh Tribal Welfare
+                                    Residential Educational Institutions Society (APTWREIS)</p>
+                                <ul class="timeline-list">
+                                    <li>Develop and maintain enterprise-scale educational management applications using
+                                        Python, Django, REST APIs, and MySQL, supporting students, teachers,
+                                        administrators, and government stakeholders.</li>
+                                    <li>Design, develop, and enhance modules, workflows, dashboards, and services while
+                                        implementing new business requirements and improving existing functionalities.
+                                    </li>
+                                    <li>Manage and optimize MySQL databases through schema design, query tuning,
+                                        indexing, data validation, and performance improvements to ensure system
+                                        scalability and reliability.</li>
+                                    <li>Implement role-based access control (RBAC), troubleshoot production issues,
+                                        resolve application defects, and maintain the stability and security of live
+                                        production systems.</li>
+                                    <li>Collaborate with stakeholders to gather requirements, deliver software
+                                        enhancements, modernize legacy applications, and contribute to deployment,
+                                        monitoring, and ongoing platform maintenance.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CosmoOps -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="job-role">Software Engineer</h3>
+                                        <span class="job-company">CosmoOps Private Limited</span>
+                                    </div>
+                                    <div class="job-meta">
+                                        <div class="job-date">Dec 2023 – Feb 2026</div>
+                                        <div class="job-location">Pondicherry, India</div>
+                                    </div>
+                                </div>
+                                <ul class="timeline-list">
+                                    <li>Designed and deployed scalable FastAPI and Django REST services powering
+                                        FinTech, AI-driven, and multi-tenant SaaS platforms.</li>
+                                    <li>Engineered ledger-based financial systems with atomic, idempotent transactions
+                                        and event-driven payment processing using Stripe and Razorpay webhooks.</li>
+                                    <li>Built real-time systems using WebSockets, Redis pub/sub, and asynchronous
+                                        background tasks to support high-concurrency workloads.</li>
+                                    <li>Integrated LLM-powered automation using Hugging Face and AWS Bedrock for
+                                        intelligent task prioritization, summarization, and analytics workflows.</li>
+                                    <li>Optimized PostgreSQL and Redis through indexing and caching strategies, reducing
+                                        API latency by up to 30% while enforcing OAuth2/OIDC-based RBAC security.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Work Widget (Projects Board) -->
+                <section id="projects" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="folder-git-2" class="widget-icon"></i>
+                            <h2 class="widget-title">Active Deployment Pipelines</h2>
+                        </div>
+                        <span class="widget-tag">SYS_DEPLOY_04</span>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 1: AP Gurukulam -->
+                        <div class="project-card" data-project="gurukulam">
+                            <div class="project-image-fallback">
+                                <i data-lucide="graduation-cap" class="project-logo-overlay"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">AP Gurukulam Platform</h3>
+                                <p class="project-desc">Enterprise-scale educational management platform for student,
+                                    teacher, and administrator operations.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Django REST Framework (DRF)</span>
+                                    <span class="project-tag">REST APIs</span>
+                                    <span class="project-tag">HTML5</span>
+                                    <span class="project-tag">CSS3</span>
+                                    <span class="project-tag">Bootstrap</span>
+                                    <span class="project-tag">jQuery</span>
+                                    <span class="project-tag">Git</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: AcuFinAI -->
+                        <div class="project-card" data-project="acufinai">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(99, 102, 241, 0.15) 100%);">
+                                <i data-lucide="wallet" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">AcuFinAI Engine</h3>
+                                <p class="project-desc">AI-powered digital wallet and multi-currency ledger with atomic
+                                    double-entry bookkeeping and smart spending pipelines.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">FastAPI</span>
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">TypeScript</span>
+                                    <span class="project-tag">Redux Toolkit</span>
+                                    <span class="project-tag">Celery</span>
+                                    <span class="project-tag">Redis</span>
+                                    <span class="project-tag">PostgreSQL</span>
+                                    <span class="project-tag">OpenSearch</span>
+                                    <span class="project-tag">AWS Bedrock</span>
+                                    <span class="project-tag">Keycloak</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Collabryta -->
+                        <div class="project-card" data-project="collabryta">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);">
+                                <i data-lucide="users" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Collabryta</h3>
+                                <p class="project-desc">AI-powered remote team collaboration platform utilizing
+                                    WebSockets for real-time channels and LLMs for meeting insights.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">FastAPI</span>
+                                    <span class="project-tag">React.js</span>
+                                    <span class="project-tag">TypeScript</span>
+                                    <span class="project-tag">WebSockets</span>
+                                    <span class="project-tag">Redis</span>
+                                    <span class="project-tag">Hugging Face</span>
+                                    <span class="project-tag">Qwen3</span>
+                                    <span class="project-tag">AWS</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: OrbitOrg -->
+                        <div class="project-card" data-project="orbitorg">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);">
+                                <i data-lucide="globe" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">OrbitOrg SaaS</h3>
+                                <p class="project-desc">Multi-tenant SaaS platform with isolated tenant dashboards, JWT
+                                    security structure, and Redux sync.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">FastAPI</span>
+                                    <span class="project-tag">React.js</span>
+                                    <span class="project-tag">TypeScript</span>
+                                    <span class="project-tag">Docker</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: Schedora -->
+                        <div class="project-card" data-project="schedora">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(245, 158, 11, 0.15) 100%);">
+                                <i data-lucide="calendar" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Schedora Booking</h3>
+                                <p class="project-desc">High-concurrency appointment scheduling system with Redis locks
+                                    and digitally signed PDF workflows.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Django REST</span>
+                                    <span class="project-tag">React.js</span>
+                                    <span class="project-tag">Redis</span>
+                                    <span class="project-tag">AWS S3</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: OutfitCart -->
+                        <div class="project-card" data-project="outfitcart">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(245, 158, 11, 0.15) 100%);">
+                                <i data-lucide="shopping-cart" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">OutfitCart E-Commerce</h3>
+                                <p class="project-desc">End-to-end catalog, cart, checkout, payment gateway
+                                    integrations, and order-tracking dashboard.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Django REST</span>
+                                    <span class="project-tag">React.js</span>
+                                    <span class="project-tag">PostgreSQL</span>
+                                    <span class="project-tag">JWT</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Library System -->
+                        <div class="project-card" data-project="library">
+                            <div class="project-image-fallback"
+                                style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);">
+                                <i data-lucide="book-open" class="project-logo-overlay"
+                                    style="filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6));"></i>
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Library App</h3>
+                                <p class="project-desc">Django-based catalog and operations app deployed on AWS EC2 with
+                                    automated CI/CD pipelines.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Django</span>
+                                    <span class="project-tag">AWS EC2</span>
+                                    <span class="project-tag">SQLite</span>
+                                    <span class="project-tag">CI/CD</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-pipeline-status"><span class="pulse-dot"></span> LIVE</span>
+                                <span class="project-link-indicator">Diagnostics <i data-lucide="arrow-right"
+                                        style="width: 14px; height: 14px;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Certifications Widget -->
+                <section id="certifications" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="award" class="widget-icon"></i>
+                            <h2 class="widget-title">Professional Certifications</h2>
+                        </div>
+                        <span class="widget-tag">SYS_CRED_05</span>
+                    </div>
+
+                    <div class="certs-grid">
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="cloud"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">AWS Certified Developer</span>
+                                    <span class="cert-status-tag">Active</span>
+                                </div>
+                                <span class="cert-issuer">Amazon Web Services &bull; Associate</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="box"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">Docker Certification</span>
+                                    <span class="cert-status-tag">Active</span>
+                                </div>
+                                <span class="cert-issuer">Docker Inc. &bull; Developer</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="github"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">GitHub Foundations</span>
+                                    <span class="cert-status-tag">Verified</span>
+                                </div>
+                                <span class="cert-issuer">GitHub &bull; Foundations</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="zap"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">Redis Fundamentals</span>
+                                    <span class="cert-status-tag">Completed</span>
+                                </div>
+                                <span class="cert-issuer">Redis University &bull; RU101</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="database"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">MongoDB Certification</span>
+                                    <span class="cert-status-tag">Verified</span>
+                                </div>
+                                <span class="cert-issuer">MongoDB University</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="database"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">PostgreSQL Certification</span>
+                                    <span class="cert-status-tag">Verified</span>
+                                </div>
+                                <span class="cert-issuer">PostgreSQL Association</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="git-merge"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">Microservices Architecture</span>
+                                    <span class="cert-status-tag">Completed</span>
+                                </div>
+                                <span class="cert-issuer">Udemy &bull; Fundamentals</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="code-2"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">Python Programming</span>
+                                    <span class="cert-status-tag">Verified</span>
+                                </div>
+                                <span class="cert-issuer">Cisco Networking Academy</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="server"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">FastAPI Development &amp; API Design</span>
+                                    <span class="cert-status-tag">Verified</span>
+                                </div>
+                                <span class="cert-issuer">Udemy &bull; Developer</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-badge"><i data-lucide="globe"></i></div>
+                            <div class="cert-details">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-name">Full-Stack Web Development with Django</span>
+                                    <span class="cert-status-tag">Completed</span>
+                                </div>
+                                <span class="cert-issuer">Udemy &bull; Full-Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Diagnostics Widget -->
+                <section id="education" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="graduation-cap" class="widget-icon"></i>
+                            <h2 class="widget-title">Education Diagnostics</h2>
+                        </div>
+                        <span class="widget-tag">SYS_EDU_06</span>
+                    </div>
+
+                    <div class="education-card">
+                        <h4 class="education-title">B.Tech - Electrical &amp; Electronics Engineering</h4>
+                        <span class="education-college">Rajeev Gandhi Memorial College of Engineering &amp; Technology</span>
+                        <div class="education-meta">
+                            <span>GPA / Score: 1st Class</span>
+                            <span>2019 – 2023</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact & Gateway Widget -->
+                <section id="contact" class="dashboard-widget">
+                    <div class="widget-header">
+                        <div class="widget-title-group">
+                            <i data-lucide="send" class="widget-icon"></i>
+                            <h2 class="widget-title">Secure Dispatcher Gateway</h2>
+                        </div>
+                        <span class="widget-tag">SYS_COMM_07</span>
+                    </div>
+
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h3
+                                style="font-size: 1rem; color: var(--color-primary); font-family: var(--font-heading); margin-bottom: 0.5rem;">
+                                Contact Information</h3>
+                            <p class="contact-info-desc">Feel free to reach out via email, phone, or connect through
+                                social links. I will get back to you as soon as possible.</p>
+                            <div class="contact-methods">
+                                <!-- Location -->
+                                <div class="contact-method-card">
+                                    <div class="contact-method-icon"><i data-lucide="map-pin"></i></div>
+                                    <div>
+                                        <div class="contact-method-label">Location</div>
+                                        <div class="contact-method-value">Hyderabad, Telangana, India</div>
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <a href="mailto:kotaashok543@gmail.com" class="contact-method-card">
+                                    <div class="contact-method-icon"><i data-lucide="mail"></i></div>
+                                    <div>
+                                        <div class="contact-method-label">Email Address</div>
+                                        <div class="contact-method-value">kotaashok543@gmail.com</div>
+                                    </div>
+                                </a>
+                                <!-- Phone -->
+                                <a href="tel:+918688056443" class="contact-method-card">
+                                    <div class="contact-method-icon"><i data-lucide="phone"></i></div>
+                                    <div>
+                                        <div class="contact-method-label">Phone</div>
+                                        <div class="contact-method-value">+91 8688056443</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="e.g. John Doe"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-control"
+                                    placeholder="e.g. john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-control"
+                                    placeholder="e.g. Consultation Request" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" class="form-control"
+                                    placeholder="Describe your project, timeline, or query..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" id="btn-submit-form"
+                                style="justify-content: center; width: 100%;">
+                                Send Message <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                            </button>
+                            <div id="form-feedback"
+                                style="display: none; font-family: var(--font-mono); font-size: 0.85rem; text-align: center; padding: 0.5rem; border-radius: var(--radius-sm);">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container footer-content">
+                    <span class="footer-copyright">&copy; 2026 Ashok Kumar Reddy Kota. All rights reserved.</span>
+                    <div class="footer-socials">
+                        <a href="https://github.com/kota-ashok" target="_blank" class="footer-social-link"
+                            id="footer-github" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="https://www.linkedin.com/in/kota-ashok-reddy/" target="_blank"
+                            class="footer-social-link" id="footer-linkedin" aria-label="LinkedIn"><i
+                                data-lucide="linkedin"></i></a>
+                        <a href="mailto:kotaashok543@gmail.com" class="footer-social-link" id="footer-mail"
+                        <a href="mailto:kotaashok543@gmail.com" class="contact-method-card" id="footer-mail"
+                            aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- MODAL 1: AP Gurukulam -->
+    <div class="modal" id="modal-gurukulam">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">AP Gurukulam Platform</h3>
+                <div class="modal-subtitle">Python &bull; Django REST Framework (DRF) &bull; REST APIs &bull; HTML5 &bull; CSS3 &bull; Bootstrap &bull; jQuery &bull; Git</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        A government-scale platform supporting students, teachers, administrators, and welfare officers
+                        across AP Tribal Welfare Residential institutions. Engineered key modules ensuring smooth
+                        administration, role-based workflows, and automated reporting.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Developed and maintained a large-scale educational management platform supporting students, teachers, administrators, and government stakeholders across tribal welfare institutions.</li>
+                        <li>Designed and implemented new modules, workflows, dashboards, reports, and backend services using Django, DRF, and REST APIs to streamline academic and administrative processes.</li>
+                        <li>Optimized SQL databases through query tuning, indexing, schema enhancements, data migration, and validation techniques to improve system performance and reliability.</li>
+                        <li>Implemented secure role-based access control (RBAC), resolved production issues, managed deployments, and contributed to continuous platform enhancements and modernization initiatives.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">Client Tier</div>
+                                <div class="arch-node-tech">HTML5/JS</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>HTTPS</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">API Server</div>
+                                <div class="arch-node-tech">Django REST</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>SQL</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-db">
+                                <div class="arch-node-title">Database</div>
+                                <div class="arch-node-tech">MySQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: AcuFinAI -->
+    <div class="modal" id="modal-acufinai">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">AcuFinAI: Smart Ledger & Wallet Engine</h3>
+                <div class="modal-subtitle">FastAPI &bull; React &bull; TypeScript &bull; Redux Toolkit &bull; Celery &bull; Redis &bull; PostgreSQL &bull; OpenSearch &bull; AWS Bedrock &bull; Keycloak</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        A highly reliable double-entry, multi-currency ledger with strict financial consistency rules.
+                        It utilizes asynchronous workflows for spending analysis and Stripe/Razorpay webhooks for
+                        payment flows.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Built a double-entry, multi-currency ledger engine with atomic, idempotent transactions ensuring financial consistency and audit reliability.</li>
+                        <li>Designed event-driven payment workflows integrating Stripe and Razorpay with retry-safe reconciliation mechanisms.</li>
+                        <li>Developed AI-powered financial intelligence pipelines for expense categorization, anomaly detection, and personalized spending insights.</li>
+                        <li>Architected a secure, multi-tenant FinTech SaaS platform with OAuth2/OIDC-based RBAC and tenant isolation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">Wallet UI</div>
+                                <div class="arch-node-tech">React/TS</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>REST</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">Ledger API</div>
+                                <div class="arch-node-tech">FastAPI/Redis</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Async Task</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-ai">
+                                <div class="arch-node-title">AI Engine</div>
+                                <div class="arch-node-tech">AWS Bedrock</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Collabryta -->
+    <div class="modal" id="modal-collabryta">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">Collabryta Remote Workspace</h3>
+                <div class="modal-subtitle">FastAPI &bull; React.js &bull; TypeScript &bull; WebSockets &bull; Redis &bull; Hugging Face &bull; Qwen3 &bull; AWS</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        An AI-driven remote team coordination system. Provides instant communication channels powered by
+                        WebSockets, and extracts action items from team meetings using integrated Llama 3 70B models.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Architected a scalable, multi-tenant collaboration platform enabling real-time messaging, task orchestration, and workflow automation.</li>
+                        <li>Engineered modular FastAPI microservices with async processing and Redis-backed pub/sub architecture.</li>
+                        <li>Integrated Llama 3 70B and Hugging Face Inference Endpoints for task prioritization, meeting summarization, and document intelligence.</li>
+                        <li>Implemented secure authentication, RBAC, Amazon Cognito integration, Amazon S3 storage, and CloudFront content delivery.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">Collab Portal</div>
+                                <div class="arch-node-tech">React/WS</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>PubSub</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">Chat Router</div>
+                                <div class="arch-node-tech">Redis/FastAPI</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>LLM Request</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-ai">
+                                <div class="arch-node-title">Inference</div>
+                                <div class="arch-node-tech">Llama 3 (HF)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: OrbitOrg -->
+    <div class="modal" id="modal-orbitorg">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">OrbitOrg: Multi-Tenant SaaS Platform</h3>
+                <div class="modal-subtitle">FastAPI &bull; React.js &bull; TypeScript &bull; Docker &bull; JWT
+                    Authentication &bull; Redux Toolkit</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        A production-grade, containerized multi-tenant SaaS platform featuring isolated tenant
+                        workspaces, customizable administrator control dashboards, dynamic role-based access
+                        configurations, and robust security patterns.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Architected and developed a multi-tenant SaaS platform with isolated tenant dashboards and
+                            secure role-based access control.</li>
+                        <li>Built scalable backend APIs using FastAPI and Node.js to handle CRUD operations and
+                            structured SQL database storage.</li>
+                        <li>Designed tenant-aware authentication and authorization using JWT with strict data isolation.
+                        </li>
+                        <li>Implemented Redux Toolkit for centralized state management and real-time dashboard
+                            synchronization.</li>
+                        <li>Optimized the system for high concurrency and performance under multi-tenant workloads.</li>
+                        <li>Containerized the application using Docker and deployed it for scalable, cloud-hosted
+                            operations.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">SaaS UI</div>
+                                <div class="arch-node-tech">React/Redux</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>JWT Auth</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">FastAPI Node</div>
+                                <div class="arch-node-tech">FastAPI &amp; Docker</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Isolated SQL</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-db">
+                                <div class="arch-node-title">Tenant DB</div>
+                                <div class="arch-node-tech">PostgreSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5: Schedora -->
+    <div class="modal" id="modal-schedora">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">Schedora Appointment Booking</h3>
+                <div class="modal-subtitle">Django REST Framework &bull; React.js &bull; Redis Locks &bull; AWS S3
+                    &bull; PDF Engine</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        A highly concurrent scheduler facilitating medical appointment reservations, incorporating
+                        distributed locks to eliminate overlapping reservations and secure signed transaction documents.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Designed and developed a high-concurrency appointment scheduling system supporting seamless
+                            doctor–patient coordination.</li>
+                        <li>Implemented Redis-based distributed locking to prevent race conditions and eliminate double
+                            bookings.</li>
+                        <li>Built secure prescription workflows using digitally signed PDFs with time-limited S3 access
+                            controls.</li>
+                        <li>Developed real-time, multi-channel notification services (email, SMS, in-app) for
+                            confirmations and appointment reminders.</li>
+                        <li>Improved scalability and API performance through optimized schema design, indexing, and
+                            Redis caching.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">Scheduler Portal</div>
+                                <div class="arch-node-tech">React.js</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Mutex Lock</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">Core Engine</div>
+                                <div class="arch-node-tech">Django &amp; Redis</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Signed URL</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-db">
+                                <div class="arch-node-title">Prescription File</div>
+                                <div class="arch-node-tech">AWS S3 Storage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 6: OutfitCart -->
+    <div class="modal" id="modal-outfitcart">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">OutfitCart E-Commerce Engine</h3>
+                <div class="modal-subtitle">Django REST Framework &bull; React.js &bull; PostgreSQL &bull; Gateway
+                    Integration</div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        An e-commerce architecture managing catalogue search queries, transactional carts, payment
+                        integrations, and administrative tracking dashboards with optimized query performance.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Developed end-to-end product catalog, cart, checkout, and order-tracking workflows.</li>
+                        <li>Incorporated secure payment gateway integration with automated transaction confirmation.
+                        </li>
+                        <li>Built an administrative dashboard for product, inventory, and order management.</li>
+                        <li>Optimized database queries, achieving 40% faster API response times.</li>
+                        <li>Implemented authentication and role-based access control to secure customer accounts and
+                            admin operations.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">E-Commerce UI</div>
+                                <div class="arch-node-tech">React.js</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Checkout API</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">E-Comm API</div>
+                                <div class="arch-node-tech">Django DRF</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Transactional DB</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-db">
+                                <div class="arch-node-title">Product Catalog</div>
+                                <div class="arch-node-tech">PostgreSQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 7: Library System -->
+    <div class="modal" id="modal-library">
+        <div class="modal-content">
+            <button class="modal-close-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <h3 class="modal-title">Library Management System</h3>
+                <div class="modal-subtitle">Django &bull; AWS EC2 &bull; CI/CD Pipelines &bull; Database Integration
+                </div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h4 class="modal-section-title">Project Overview</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        A cloud-hosted cataloging system deployed to AWS EC2 instance nodes, fully integrated with
+                        GitHub Action CI/CD deployment routines.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">Key Contributions</h4>
+                    <ul class="timeline-list" style="margin-left: 0.5rem;">
+                        <li>Developed and deployed a Django-based library app on AWS for scalable, cloud-based
+                            operations.</li>
+                        <li>Implemented CI/CD automation and secure database integration.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="modal-section-title">System Architecture Layout</h4>
+                    <div class="architecture-container">
+                        <div class="arch-diagram">
+                            <div class="arch-node">
+                                <div class="arch-node-title">Developer Push</div>
+                                <div class="arch-node-tech">GitHub Repo</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Deploy Run</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-node-title">AWS Host</div>
+                                <div class="arch-node-tech">Amazon EC2 Node</div>
+                            </div>
+                            <div class="arch-arrow">
+                                <span>Web Server</span>
+                                <div class="arch-arrow-line"></div>
+                            </div>
+                            <div class="arch-node highlight-db">
+                                <div class="arch-node-title">Core App</div>
+                                <div class="arch-node-tech">Django Stack</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
